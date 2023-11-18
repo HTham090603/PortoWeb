@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./assets/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="./assets/lib/jquery-3.7.1.min.js"></script>
+    <script src="./assets/lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="porto_home">
+        <div class=" navbar-expand-lg border shadow position-fixed w-100 bg-light" style="top: 0;">
+            <header id="header" class="pt-4 pb-2">
+                <div class="container">
+                    <div class="header_content d-flex justify-content-between row">
+                        <a href="index.html" class="col-lg-2 col-sm-12">
+                            <img src="./assets/img/logo.png" alt="logo" class="header__logo center-row">
+                        </a>
+
+                        <div class="header__search col-lg-5 col-md-1 col-sm-1">
+                            <form action="post" class="form-group d-lg-block d-md-none d-none">
+                                <div class="search__container row">
+                                    <input type="search" placeholder="Search..."
+                                        class="search__input col-md-10 form-control">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-5 col-sm-12 d-flex justify-content-around">
+                            <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#my-nav-bar" style="width: 55px;" aria-controls="my-nav-bar"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fas fa-bars col-md-2 col-sm-2" style="font-size: 20px;"></span>
+                            </button>
+                            <p class="d-inline-flex gap-1 d-lg-none">
+                                <button style="font-size: 22px;" class="btn" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#SearchModal">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </p>
+
+                            <a href="contact.html" class="col-lg-5 text-dark">
+                                <div class="header__phone row">
+                                    <i class="fas fa-phone-alt col-md-2 mt-3"></i>
+                                    <div class="phone-content row col-lg-9">
+                                        <ul class="list-unstyled">
+                                            <li style="font-size: small;" class="d-lg-block d-md-none d-none">CALL US
+                                                NOW
+                                            </li>
+                                            <li class="d-lg-block d-md-none d-none"><b
+                                                    style="font-size: 16px; letter-spacing: 1px;">+123 5678</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <div class="header__account row">
+                                <i class="fas fa-user col-md-2 mt-3 none"></i>
+                                <a class="disnone" href="signin.html"><i
+                                        class="fas fa-user col-md-2 mt-3 text-dark"></i></a>
+                                <div class="row col-md-10 mt-1">
+                                    <a class="text-dark text-decoration-none" href="signin.html">
+                                        <ul class="list-unstyled">
+                                            <li style="font-size: small;" class="d-lg-block d-md-none d-none">WELCOME
+                                            </li>
+                                            <li class="d-lg-block d-md-none d-none"><b>Login</b></li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a href="cart.html">
+                                <div class="header__cart">
+                                    <i class="fas fa-shopping-cart mt-3 text-dark"></i>
+                                    <p class="rounded-circle btn bg-primary text-light"><b>0</b></p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+
+                        <div class="collapse navbar-collapse col-6" id="my-nav-bar">
+                            <!-- code html trong nay -->
+
+                            <div class="header__nav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mr-80 opa">
+                                        <a class="nav-link" href="introduce.html">Introduce</a>
+                                    </li>
+                                    <li class="nav-item mr-80 opa">
+                                        <a class="nav-link" href="#">Site Map</a>
+                                    </li>
+                                    <li class="nav-item dropdown ">
+
+                                        <a href="#" class="opa nav-link dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown">
+                                            Categories
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" type="button"
+                                                    href="./psamsung.html">Samsung</a></li>
+                                            <li><a class="dropdown-item" type="button" href="./piphone.html">Iphone</a>
+                                            </li>
+                                            <li><a class="dropdown-item" type="button" href="./pxiaomi.html">Xiaomi</a>
+                                            </li>
+                                            <li><a class="dropdown-item" type="button" href="./poppo.html">Oppo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown-none">
+                                        <p class="d-inline-flex gap-1 opa">
+                                            <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample"
+                                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Categories
+                                                <i class="fas fa-sort-down" style="position: relative; top: -3px;"></i>
+                                            </a>
+                                        </p>
+                                        <div class="nav-collapse collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                                <ul class="list-unstyled">
+                                                    <li style="margin-bottom: 8px;"><a class="text-dark" type="button"
+                                                            href="./psamsung.html">Samsung</a></li>
+                                                    <li style="margin-bottom: 8px;"><a class="text-dark" type="button"
+                                                            href="./piphone.html">Iphone</a>
+                                                    </li>
+                                                    <li style="margin-bottom: 8px;"><a class="text-dark" type="button"
+                                                            href="./pxiaomi.html">Xiaomi</a>
+                                                    </li>
+                                                    <li><a class="text-dark" type="button" href="./poppo.html">Oppo</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header__info col-6 d-flex justify-content-end">
+                            <ul class="list-unstyled d-flex">
+                                <li class="mx-2 mt-1 none">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </li>
+                                <li class="none mr-80">
+                                    <p>FREE Next Day Delivery For Orders $205+</p>
+                                </li>
+                            </ul>
+
+                            <ul class="list-unstyled d-flex">
+                                <li class=" mx-2 mt-1 none">
+                                    <i class="fas fa-percent"></i>
+                                </li>
+                                <li class="none">
+                                    <p>Special Offers</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <a href="#">
+            <div id="return" class="d-block btn btn-secondary position-fixed py-2 px-3">
+                <b><i class="fas fa-sort-up"></i></b>
+            </div>
+        </a>
+
+        <main class="page-main mb-5">
+            <!-- <div class="block__breadcrumb py-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-decoration-none text-dark">
+                                <span class="fas fa-home" style="margin-right: 8px;"></span>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page">Sign Up</li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <div class="page-title mb-5" style="background-color: #F4F4F4;">
+                <div class="container py-5 ">
+                    <b class="d-flex justify-content-center py-3" style="font-size: 30px;">Create New Customer Account
+                    </b>
+                </div>
+
+            </div>
+            <div class="formRegister d-flex justify-content-center">
+                <div class="col-8 row d-flex justify-content-between">
+                    <div class="col-lg-6 px-4 ">
+                        <b class="mt-5" style="font-size: 24px; ">
+                            Personal Information
+                        </b>
+                        <p class=" mt-3">
+
+                        </p>
+                        <form action="post">
+                            <div class="form-group">
+                                <label for="firstname">First Name <b class="starred">*</b></label>
+                                <input type="text" class="form-control py-2 rounded-0 mb-4 " id="firstname"
+                                    placeholder="">
+
+
+
+                                <label for="lastname">Last Name <b class="starred">*</b></label>
+                                <input type="text" class="form-control py-2 rounded-0 mb-4 " id="lastname"
+                                    placeholder="">
+
+                            </div>
+
+
+                            <input type="checkbox" name="" id="signup">
+                            <label for="signup" class=" mb-5">Sign Up for Newsletter</label>
+                            <button type="submit"
+                                class="btn btn-dark form-control rounded-0 mt-3 mb-2 py-3 text-uppercase font-weight-bold "><b>create
+                                    an account</b></button>
+
+
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="col-lg-6 px-4">
+                        <b class="mt-5" style="font-size: 24px; ">
+                            Sign-in Information
+                        </b>
+                        <p class=" mt-3">
+
+                        </p>
+                        <form action="post">
+                            <div class="form-group">
+                                <label for="yourmail">Email address <b class="starred">*</b></label>
+                                <input type="email" class="form-control py-2 rounded-0 mb-4 " id="yourmail"
+                                    placeholder="">
+
+
+
+                                <label for="password">Pass word <b class="starred">*</b></label>
+                                <input type="password" class="form-control py-2 rounded-0  " id="password"
+                                    placeholder="">
+                                <p class=" mt-1">
+                                    Password Strength: No Password
+                                </p>
+                                <label for="confirmpassword" class=" mt-2">Confirm Password <b
+                                        class="starred">*</b></label>
+                                <input type="password" class="form-control py-2 rounded-0 mb-4 " id="confirmpassword"
+                                    placeholder="">
+
+                            </div>
+
+
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+
+        <footer class="footer bg-dark">
+            <div class="container ">
+
+                <div class="footerTop row py-5 border-bottom border-secondary">
+                    <div class="footer_Image col-lg-2 d-flex align-items-center mb-4">
+                        <img src="./assets/img/logo_ecomwhite_sp.png" alt="">
+                    </div>
+                    <div class="footer__contactInfo col-lg-3 mb-3">
+                        <h5 class="text-white ">CONTACT INFO</h5>
+
+                        <br>
+
+                        <b class="text-secondary">ADDRESS:</b>
+                        <p class="text-white mb-2">123 Street Name, City, England</p>
+
+                        <b class="text-secondary">PHONE:</b>
+                        <p class="text-white mb-2">(123) 456-7890</p>
+
+                        <b class="text-secondary">EMAIL:</b>
+                        <p class="text-white mb-2">mail@example.com</p>
+
+                        <b class="text-secondary">WORKING DAYS/HOURS:</b>
+                        <p class="text-white mb-2">Mon - Sun / 9:00 AM - 8:00 PM</p>
+
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="fab fa-facebook py-2 " style="color: #ffffff; font-size: 36px;"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="fab fa-twitter " style="color: #ffffff;font-size: 36px;"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="fab fa-invision " style="color: #ffffff;font-size: 36px;"></i>
+                        </button>
+                    </div>
+
+                    <div class="footer_customerService col-lg-3">
+                        <h5 class="text-white ">CUSTOMER SERVICE</h5>
+                        <br>
+                        <div class="mb-3">
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Help & FAQs</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Order Tracking</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Shipping &
+                                Delivery</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Orders History</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Advanced
+                                Search</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">My Account</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Careers</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">About Us</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Corporate
+                                Sales</a>
+                            <a href="" class=" text-decoration-none d-block text-hover-white">Privacy</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__subscribe col-lg-4">
+                        <h5 class="text-white">SUBSCRIBE NEWSLETTER</h5>
+
+                        <br>
+
+                        <p class="text-secondary">
+                            Get all the latest information on events, sales and offers.
+                            <br> Sign up for newsletter:
+                        </p>
+
+                        <form class="form-group mt-3">
+                            <input type="email" class="form-control py-2 pl-5 bg-light" placeholder="Email Address">
+                            <button type="button" class="hover-btn btn text-white text-uppercase px-5 py-2 mt-4"
+                                style="background-color: #356ddc;">
+                                <a class="text-light text-decoration-none" href="#">SUBSCRIBE</a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footerBottom row py-3 ">
+                    <div class="col-lg-10 mb-4">
+                        <p class="text-secondary">
+                            © Porto Magento 2023. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+                        <i class="fab fa-cc-visa px-2" style="color: #fff; font-size: 36px;"></i>
+                        <i class="fab fa-cc-paypal px-1" style="color: #fff; font-size: 36px;"></i>
+                        <i class="fab fa-cc-stripe px-2" style="color: #fff; font-size: 36px;"></i>
+                        <i class="fab fa-cc-vevifign px-1" style="color: #fff; font-size: 36px;"></i>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="SearchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Thêm nội dung modal ở đây, ví dụ: -->
+                    <form action="post" class="form-group">
+                        <input type="text" placeholder="Search..." class="form-control">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

@@ -1,0 +1,634 @@
+/* CSS General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+
+.btn-main {
+    background-color: #356ddc;
+}
+
+.btn-main:hover {
+    background-color: #356ddc;
+    opacity: 0.8;
+    transition: 0.6s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mr-80 {
+    margin-right: 80px;
+}
+
+ul,
+p,
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hover-btn:hover {
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+.bgblue {
+    background-image: url(/assets/img/blue-background-with-line-blur-vector-illustration_176456-642.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Start Header */
+.navbar-expand-lg {
+    z-index: 5;
+}
+
+.header__logo {
+    max-width: 100%;
+    padding-right: 20px;
+    max-height: 55px;
+    margin-right: 20px;
+}
+
+.header__search .search__input {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.header__phone i {
+    font-size: 25px;
+    margin-right: 1px;
+}
+
+.header__phone li {
+    font-size: 18px;
+}
+
+.header__account i {
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+.header__account li {
+    font-size: 18px;
+}
+
+.header__cart i {
+    font-size: 30px;
+}
+
+.header__cart p {
+    font-size: small;
+    padding: 1px 6px;
+    position: relative;
+    bottom: 14px;
+    right: 5px;
+}
+
+.header__nav p,
+.header__nav a {
+    font-weight: 500;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.header__nav .dropdown-item {
+    transition: 0.2s color linear;
+    width: 300px;
+}
+
+.header__nav .dropdown-item:hover {
+    color: #356ddc;
+}
+
+.header__nav .dropdown-item:active {
+    background-color: #fff;
+}
+
+.header__nav .opa:hover {
+    opacity: 0.7;
+    transition: 0.4s ease-in;
+}
+
+/* End Header */
+
+.page-main,
+.page_slide {
+    margin-top: 136px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .page-main {
+        margin-top: 174px;
+    }
+}
+
+#return {
+    right: 50px;
+    bottom: 100px;
+    z-index: 4;
+}
+
+/* Start slider */
+.forto_slide_products_img img {
+    max-width: 600px;
+}
+
+/* End slider */
+
+/* Start Shop Category */
+.shopCategories .thumbnail-info-fr {
+    position: absolute;
+    border: 2px solid #e7e7e7;
+    display: block;
+    width: 60%;
+    height: 70%;
+    top: 28%;
+    left: 50%;
+    border-radius: 1rem;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 0.6s linear;
+}
+
+.shopCategories .category-item:hover .thumbnail-info-fr {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+    .shopCategories .thumbnail-info-fr {
+        width: 58%;
+        height: 60%;
+        top: 24%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .shopCategories .thumbnail-info-fr {
+        width: 62%;
+        height: 55%;
+        top: 20%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .shopCategories .thumbnail-info-fr {
+        width: 62%;
+        height: 80%;
+        top: 33%;
+        left: 50%;
+    }
+
+    .category-item {
+        margin-bottom: 100px;
+    }
+}
+
+.shopCategories img {
+    position: relative;
+}
+
+.category-item h3 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* End Shop Category */
+
+/* Start Hot Deals */
+.card-title {
+    color: #000;
+    transition: 0.3s linear;
+}
+
+.card-title:hover {
+    color: #356ddc;
+}
+
+
+.add-to-cart-btn {
+    top: 0;
+    right: 30px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.card:hover .add-to-cart-btn {
+    background-color: rgba(53, 109, 220, 0.8);
+    opacity: 1;
+}
+
+@media(max-width: 576px) {
+    .add-to-cart-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+}
+
+.card img {
+    transition: transform 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+
+/* End Hot Deals */
+
+/* Start introduce */
+.introduce-member {
+    text-align: center;
+}
+
+.introduce-member .content {
+    margin-top: 30%;
+}
+
+/* End introduce */
+
+/* Start Footer */
+.textgray {
+    color: #6C757D;
+}
+
+.text-hover-white:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.footer__subscribe input,
+.footer__subscribe button {
+    border-radius: 20px;
+    background-color: rgb(217, 217, 217);
+    border: none;
+}
+
+/* End Footer */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 42rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 42rem;
+}
+
+
+/* MARKETING CONTENT
+    -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+/* Featurettes
+    ------------------------- */
+
+.featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.hinhdaidien {
+    width: 150px;
+    height: 150px;
+}
+
+.disnone {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .center-row {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .none {
+        display: none;
+    }
+
+    .disnone {
+        display: block;
+    }
+
+    .header__nav .dropdown {
+        width: 100%;
+        display: none;
+        position: relative;
+        background-color: #F4F4F4
+    }
+
+    .slider1 h1 {
+        font-size: 20px;
+    }
+
+    .slider1 p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 993px) {
+    .dropdown-none {
+        display: none;
+    }
+}
+
+.bggray {
+    background-color: #ccc;
+}
+
+.textwhite :hover {
+    color: #000;
+}
+
+.bgblack {
+    background-color: #000;
+}
+
+.starred {
+    color: red;
+}
+
+.marginl10 {
+    margin-left: 10px;
+}
+
+.ps {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 180px;
+    height: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    /* Loại bỏ khoảng trắng giữa các ô */
+
+}
+
+th,
+td {
+    border: 1px solid rgb(207, 207, 207);
+    /* Đường viền cho các ô */
+    padding: 10px;
+    width: 10px;
+    text-align: center;
+    /* Khoảng cách giữa nội dung và đường viền */
+}
+
+td {
+}
+
+.p2 {
+    padding: 2px 2px;
+}
+
+.page_autoParts .btn {
+    background: #fff;
+    color: #000;
+}
+
+.page_autoParts .btn:hover {
+    background-color: #356ddc;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.titleintro {
+    color: #000;
+    background-color: #fff;
+    font-style: italic;
+    font-size: 46px;
+
+}
+
+p.cursive {
+    font-family: Florence, cursive;
+}
+
+.namemember {
+    color: #000;
+    /* background-color: #000; */
+    font-style: italic;
+    font-size: 36px
+}
+
+.introweb {
+    color: #000;
+    /* background-color: #000; */
+    font-style: italic;
+    font-size: 26px
+}
+
+.intrologo {
+    padding: 30px 30px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.botron{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px;
+    margin-right: 6px;
+}
+.icon{
+    color: #000;
+}
+.icon:hover{
+    background-color: #356ddc;
+    color: #fff;
+    transition: 0.4s;
+
+}
+.bluehover{
+    background-color: #000;
+
+}
+.bluehover:hover{
+    background-color: rgb(59, 141, 213);
+    transition: 0.4s;
+
+}
+li{
+    list-style-type: none;
+}
+.margintop180{
+    margin-top: 160px;
+}
+
+@media (max-width: 600px) {
+    .titleintro {
+        color: #000;
+        background-color: #fff;
+        font-style: italic;
+        font-size: 30px;
+
+    }
+
+    .namemember {
+        color: #000;
+        /* background-color: #000; */
+        font-style: italic;
+        font-size: 24px
+    }
+
+    .introweb {
+        color: #000;
+        /* background-color: #000; */
+        font-style: italic;
+        font-size: 20px
+    }
+}
+
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+
+  .success-main {
+    width: 800px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bg-warning-nhat {
+    background-color: #f5efdb;
+    color: rgb(225, 155, 24);
+    font-size: 20px;
+  }
+
+  #soLuong {
+    width: 40px;
+    text-align: center;
+    border: 0px solid #fff;
+  }
+
+  #soLuong: {
+    border: 1px solid #fff;
+
+  }
+
+
+  
