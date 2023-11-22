@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>BILL</title>
     <link rel="stylesheet" href="./assets/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="./assets/lib/jquery-3.7.1.min.js"></script>
     <script src="./assets/lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
@@ -169,16 +169,174 @@
                 <b><i class="fas fa-sort-up"></i></b>
             </div>
         </a>
+        <!-- main -->
+
+
 
         <main class="page-main mb-5 success-main py-5">
             <div class="container">
-                <h1 class="text-center mb-3">Hoàn tất đơn hàng</h1>
-                <div class="bg-warning-nhat">
-                    <p class="text-center">Đơn hàng đang được xử lý</p>
+                <h1 class="text-center mb-3 font-weight-bold text-monospace">COMPLETED</h1>
+                <div class="py-4 bg-blue-nhat row  d-flex align-items-center rounded">
+                    <div class="">
+
+                        <img src="../PortoWeb/assets/img/shipper.png" alt="" class="position-absolute col-lg-2 rounded-circle" style="top: 104px;">
+                    </div>
+                    <div class="col-lg-12 ">
+                        <h3 class="text-center font-weight-bold">Your order is being processed</h3>
+                        <p class="text-center text-dark ">Porto will send you order updates</p>
+
+                    </div>
                 </div>
+
+                <div class="order-detail py-5">
+                    <p class="fs-3">Order detail</p>
+                    <div class="rounded border px-2 py-2">
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Order ID</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" >WN0301439932</p>
+                            </div>
+                            <div class="border-bottom"></div>
+                        </div>
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Quantity ordered</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" id="quantityOrdered"></p>
+                            </div>
+                        </div>
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Price</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700"  id="Price"></p>
+                            </div>
+                        </div>
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Payment methods</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" id="Paymentmethods"></p>
+                            </div>
+                            <div class="border-bottom"></div>
+                        </div>
+
+                        <div class="row px-2 pt-2">
+                            <div class="col-lg-4 pb-2">
+                                <h4 class="float-lg-left ">Total price</h4>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700 text-danger"  id="totalPrice"> 16</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="customerInfor">
+                    <p class="fs-3">Customer information</p>
+                    <div class="rounded border px-2 py-2">
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Customer name</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" id="customerName" ></p>
+                            </div>
+                        </div>
+
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Number phone</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" id="phone"></p>
+                            </div>
+                        </div>
+
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Email</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700"  id="emailCustomer"></p>
+                            </div>
+                        </div>
+
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Address</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" id="Address"></p>
+                            </div>
+                        </div>
+
+                        <div class="row px-2 py-2">
+                            <div class="col-lg-4 pb-2">
+                                <p class="float-lg-left">Note</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <p class=" text-right-weight700" id="Note"></p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="Listproducts mt-5">
+                    <p class="fs-3">List of products </p>
+                    <div class="rounded border px-2 py-2">
+      
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div class="confirm mt-5 text-center">
+                    <div class="btn">
+                        <a href="../PortoWeb/index.html" class="btn btn-outline-dark btn-lg ">Continue shopping</a>
+                    </div>
+                    <div class="btn ">
+                        <a href="../PortoWeb/index.html" class="btn btn-outline-primary btn-lg">Check order</a>
+                        
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
             </div>
         <!-- End block content -->
         </main>
+
+
+
 
 
 

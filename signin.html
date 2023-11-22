@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -174,19 +174,7 @@
         </a>
 
         <main class="page-main mb-5">
-            <!-- <div class="block__breadcrumb py-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <div class="container">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="index.html" class="text-decoration-none text-dark">
-                                <span class="fas fa-home"
-                                style="margin-right: 8px;"></span>
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">Sign In</li>
-                    </ul>
-                </div>
-            </div> -->
+            
             <div class="page-title mb-5" style="background-color: #F4F4F4;">
                 <div class="container py-5 ">
                     <b class="d-flex justify-content-center py-3" style="font-size: 30px;">Customer Login
@@ -204,25 +192,33 @@
                     </p>
                     <form action="post" class="">
                         <div class="form-group">
-                            <label for="yourmail" class="">Email <b class="starred">*</b></label>
-                            <input type="email" class="form-control py-2 rounded-0 mb-4 " id="yourmail" placeholder="">
+                            <div class="mt-1">
+                                <label for="emailLogin" class="" >Email <b class="starred">*</b></label>
+                                <input type="email" class="form-control py-2 rounded-0 " id="emailLogin" placeholder="">
+                                <span id="erremailLogin" class="err">(*)</span>
+
+                            </div>
 
 
+                            <div class="mt-1">
+                                <label for="passwordLogin" class="">Password <b class="starred">*</b></label>
+                                <input type="password" class="form-control py-2 rounded-0" id="passwordLogin"
+                                    placeholder="">
+                                <span id="errpasswordLogin" class="err">(*)</span>
 
-                            <label for="password" class="">Password <b class="starred">*</b></label>
-                            <input type="password" class="form-control py-2 rounded-0 mb-4 " id="password"
-                                placeholder="">
+                            </div>
 
                         </div>
                         <b>
                             Forgot Your Password?
                         </b>
-                        <button type="submit"
-                            class="btn btn-dark form-control rounded-0 mt-3 mb-2 py-3 text-uppercase font-weight-bold "><b>Sign
-                                in</b></button>
-
-                        <a href="signup.html">
-                            <button type="button"
+                        
+                        <a href="#">
+                            <button type="button" id="signin"
+                                class="btn btn-dark form-control rounded-0 mt-3  py-3 text-uppercase"><b>Sign In</b></button>
+                        </a>       
+                        <a href="./createdaccount.html">
+                            <button type="button" id="createaccountLogin"
                                 class="btn btn-dark form-control rounded-0 mt-3  py-3 text-uppercase"><b>create
                                     account</b></button>
                         </a>
@@ -350,5 +346,5 @@
 
 </body>
 <script src="./assets/js/main.js"></script>
-
+<script src="./assets/js/regex.js"></script>
 </html>

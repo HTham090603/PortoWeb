@@ -613,9 +613,9 @@ li{
     transform: translateX(-50%);
   }
 
-  .bg-warning-nhat {
-    background-color: #f5efdb;
-    color: rgb(225, 155, 24);
+  .bg-blue-nhat {
+    background-color: rgb(154, 228, 255);
+    color: rgb(9, 36, 174);
     font-size: 20px;
   }
 
@@ -625,10 +625,19 @@ li{
     border: 0px solid #fff;
   }
 
-  #soLuong: {
-    border: 1px solid #fff;
-
+ .bg-dark-nhat {
+    background-color: rgb(246, 246, 246);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
   }
+
+.text-right-weight700{
+    float: right;
+    font-weight: 700;
+}
+.err{
+    color: red;
+}
 
 
   

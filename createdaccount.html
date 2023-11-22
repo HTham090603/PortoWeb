@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Created account</title>
     <link rel="stylesheet" href="./assets/lib/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="./assets/lib/jquery-3.7.1.min.js"></script>
     <script src="./assets/lib/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
@@ -176,18 +176,7 @@
         </a>
 
         <main class="page-main mb-5">
-            <!-- <div class="block__breadcrumb py-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <div class="container">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="index.html" class="text-decoration-none text-dark">
-                                <span class="fas fa-home" style="margin-right: 8px;"></span>
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">Sign Up</li>
-                    </ul>
-                </div>
-            </div> -->
+            
 
             <div class="page-title mb-5" style="background-color: #F4F4F4;">
                 <div class="container py-5 ">
@@ -205,29 +194,32 @@
                         <p class=" mt-3">
 
                         </p>
-                        <form action="post">
+                        <form >
                             <div class="form-group">
-                                <label for="firstname">First Name <b class="starred">*</b></label>
-                                <input type="text" class="form-control py-2 rounded-0 mb-4 " id="firstname"
-                                    placeholder="">
+                                <div class="my-2">
+                                    <label for="firstname">First Name <b class="starred">*</b></label>
+                                    <input type="text" class="form-control pt-2 rounded-0  " id="firstname"
+                                        placeholder="">
+                                    <span id="errfirstname" class="err mb-5">(*)</span>
+
+                                </div>
 
 
+                                <div class="my-1">
 
-                                <label for="lastname">Last Name <b class="starred">*</b></label>
-                                <input type="text" class="form-control py-2 rounded-0 mb-4 " id="lastname"
-                                    placeholder="">
+                                    <label for="lastname" class="">Last Name <b class="starred">*</b></label>
+                                    <input type="text" class="form-control py-2 rounded-0 " id="lastname"
+                                        placeholder="">
+                                    <span id="errlastname" class="err">(*)</span>
+                                    
+                                </div>
 
                             </div>
 
 
                             <input type="checkbox" name="" id="signup">
                             <label for="signup" class=" mb-5">Sign Up for Newsletter</label>
-                            <button type="submit"
-                                class="btn btn-dark form-control rounded-0 mt-3 mb-2 py-3 text-uppercase font-weight-bold "><b>create
-                                    an account</b></button>
-
-
-
+                           
 
 
                         </form>
@@ -240,24 +232,33 @@
                         <p class=" mt-3">
 
                         </p>
-                        <form action="post">
+                        <form>
                             <div class="form-group">
-                                <label for="yourmail">Email address <b class="starred">*</b></label>
-                                <input type="email" class="form-control py-2 rounded-0 mb-4 " id="yourmail"
-                                    placeholder="">
+                                <div class="my-1">
+                                    <label for="Emailcreateacc">Email address <b class="starred">*</b></label>
+                                    <input type="email" class="form-control py-2 rounded-0 " id="Emailcreateacc"
+                                        placeholder="">
+                                    <span id="errEmailcreateacc" class="err">(*)</span>
 
+                                </div>
 
+                                <div class="my-1">
 
-                                <label for="password">Pass word <b class="starred">*</b></label>
-                                <input type="password" class="form-control py-2 rounded-0  " id="password"
-                                    placeholder="">
-                                <p class=" mt-1">
-                                    Password Strength: No Password
-                                </p>
-                                <label for="confirmpassword" class=" mt-2">Confirm Password <b
-                                        class="starred">*</b></label>
-                                <input type="password" class="form-control py-2 rounded-0 mb-4 " id="confirmpassword"
-                                    placeholder="">
+                                    <label for="passwordcreateacc">Pass word <b class="starred">*</b></label>
+                                    <input type="password" class="form-control py-2 rounded-0  " id="passwordcreateacc"
+                                        placeholder="" oninput="checkPassword()">
+                                    <span id="errpasswordcreateacc" class="err">(*)</span>
+                                    
+                                </div>
+
+                                <div class="my-1">
+                                    <label for="confirmpassword" class=" mt-2">Confirm Password <b
+                                            class="starred">*</b></label>
+                                    <input type="password" class="form-control py-2 rounded-0  " id="confirmpassword"
+                                        placeholder="" oninput="checkPassword()">
+                                    <span id="errconfirmpassword" class="err">(*)</span>
+                                    
+                                </div>
 
                             </div>
 
@@ -265,8 +266,17 @@
 
 
                         </form>
+                        
+
+
 
                     </div>
+                    
+                            <a href="./signin.html">
+                                <button type="button" id="createaccount"
+                                    class="btn btn-dark form-control rounded-0 mt-3  py-3 text-uppercase"><b>create
+                                        account</b></button>
+                            </a>
                 </div>
 
             </div>
@@ -384,5 +394,5 @@
 
 </body>
 <script src="./assets/js/main.js"></script>
-
+<script src="./assets/js/regex.js"></script>
 </html>
