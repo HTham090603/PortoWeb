@@ -7,7 +7,3 @@ navbarToggler.addEventListener("click", function () {
     navbarCollapse.classList.remove("show");
   }
 })
-
-$(document).ready(function () {
-
-})
